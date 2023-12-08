@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Nhom_Solo" Class="NhaXuatBanClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="Book.NhaXuatBan" Member="NhaXuatBans">
+    <Type Name="NhaXuatBan">
+      <Column Name="NXB_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NXB_Ten" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="NhaXuatBan_Sach" Member="Saches" ThisKey="NXB_ID" OtherKey="S_NXBID" Type="Sach" />
+    </Type>
+  </Table>
+  <Table Name="Book.Sach" Member="Saches">
+    <Type Name="Sach">
+      <Column Name="S_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="S_TheLoaiID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_Ten" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="S_Mota" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="S_TuKhoa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="S_GiaBan" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="S_TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="S_SoLanXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_KhoSach" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="S_NXBID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_NamXuatBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_GiaNhap" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="S_SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_SoTrang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_TacGiaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_TrongLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_NgonNguID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="S_NhaCungCapID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Sach_ChiTietPhieuNhap" Member="ChiTietPhieuNhaps" ThisKey="S_ID" OtherKey="CTPN_SachID" Type="ChiTietPhieuNhap" />
+      <Association Name="NhaXuatBan_Sach" Member="NhaXuatBan" ThisKey="S_NXBID" OtherKey="NXB_ID" Type="NhaXuatBan" IsForeignKey="true" />
+      <Association Name="TheLoaiSach_Sach" Member="TheLoaiSach" ThisKey="S_TheLoaiID" OtherKey="TL_ID" Type="TheLoaiSach" IsForeignKey="true" />
+      <Association Name="TacGia_Sach" Member="TacGia" ThisKey="S_TacGiaId" OtherKey="TG_ID" Type="TacGia" IsForeignKey="true" />
+      <Association Name="NgonNgu_Sach" Member="NgonNgu" ThisKey="S_NgonNguID" OtherKey="NN_ID" Type="NgonNgu" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="Book.TheLoaiSach" Member="TheLoaiSaches">
+    <Type Name="TheLoaiSach">
+      <Column Name="TL_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TL_Ten" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TL_TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="TheLoaiSach_Sach" Member="Saches" ThisKey="TL_ID" OtherKey="S_TheLoaiID" Type="Sach" />
+    </Type>
+  </Table>
+  <Table Name="Book.TacGia" Member="TacGias">
+    <Type Name="TacGia">
+      <Column Name="TG_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TG_HoTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TG_NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TG_QuocTich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="TacGia_Sach" Member="Saches" ThisKey="TG_ID" OtherKey="S_TacGiaId" Type="Sach" />
+    </Type>
+  </Table>
+  <Table Name="Management.ChiTietPhieuNhap" Member="ChiTietPhieuNhaps">
+    <Type Name="ChiTietPhieuNhap">
+      <Column Name="CTPN_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CTPN_PhieuNhapID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPN_SachID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPN_SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPN_ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Sach_ChiTietPhieuNhap" Member="Sach" ThisKey="CTPN_SachID" OtherKey="S_ID" Type="Sach" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="PhieuNhap_ChiTietPhieuNhap" Member="PhieuNhap" ThisKey="CTPN_PhieuNhapID" OtherKey="PN_ID" Type="PhieuNhap" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="Management.NgonNgu" Member="NgonNgus">
+    <Type Name="NgonNgu">
+      <Column Name="NN_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NN_Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="NgonNgu_Sach" Member="Saches" ThisKey="NN_ID" OtherKey="S_NgonNguID" Type="Sach" />
+    </Type>
+  </Table>
+  <Table Name="Management.NhaCungCap" Member="NhaCungCaps">
+    <Type Name="NhaCungCap">
+      <Column Name="NCC_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NCC_Ten" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NCC_DiaChi" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NCC_DienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NCC_Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="NhaCungCap_PhieuNhap" Member="PhieuNhaps" ThisKey="NCC_ID" OtherKey="PN_NhaCungCapID" Type="PhieuNhap" />
+    </Type>
+  </Table>
+  <Table Name="Management.PhieuNhap" Member="PhieuNhaps">
+    <Type Name="PhieuNhap">
+      <Column Name="PN_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PN_NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PN_NhaCungCapID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="PhieuNhap_ChiTietPhieuNhap" Member="ChiTietPhieuNhaps" ThisKey="PN_ID" OtherKey="CTPN_PhieuNhapID" Type="ChiTietPhieuNhap" />
+      <Association Name="NhaCungCap_PhieuNhap" Member="NhaCungCap" ThisKey="PN_NhaCungCapID" OtherKey="NCC_ID" Type="NhaCungCap" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

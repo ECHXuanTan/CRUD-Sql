@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Nhom_Solo" Class="KhachHangClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="Orders.ChiTietDonHang" Member="ChiTietDonHangs">
+    <Type Name="ChiTietDonHang">
+      <Column Name="CTDH_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CTDH_SachID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CTDH_SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTDH_ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CTDH_DonHangID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="DonHang_ChiTietDonHang" Member="DonHang" ThisKey="CTDH_DonHangID" OtherKey="DH_ID" Type="DonHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Orders.DonHang" Member="DonHangs">
+    <Type Name="DonHang">
+      <Column Name="DH_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DH_KhachHangId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DH_Ngay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DH_ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DH_TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="DonHang_ChiTietDonHang" Member="ChiTietDonHangs" ThisKey="DH_ID" OtherKey="CTDH_DonHangID" Type="ChiTietDonHang" />
+      <Association Name="DonHang_PhieuXuat" Member="PhieuXuat" ThisKey="DH_ID" OtherKey="PX_ID" Type="PhieuXuat" Cardinality="One" />
+      <Association Name="KhachHang_DonHang" Member="KhachHang" ThisKey="DH_KhachHangId" OtherKey="KH_ID" Type="KhachHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Users.QuanLy" Member="QuanLies">
+    <Type Name="QuanLy">
+      <Column Name="QL_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QL_TenTruyCap" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QL_Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="QL_MatKhau" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="QL_NgayBatDau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QL_Hoten" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="QL_CCCD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QL_NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QL_GioiTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QL_DiaChi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="QL_DienThoai" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="QL_Quyen" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="QL_TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QL_KhuVuc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Users.KhachHang" Member="KhachHangs">
+    <Type Name="KhachHang">
+      <Column Name="KH_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KH_TenTruyCap" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KH_MatKhau" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KH_HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KH_Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KH_NgayBatDau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KH_TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KH_DienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KH_DiaChi" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="KH_KhuVuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="KhachHang_DonHang" Member="DonHangs" ThisKey="KH_ID" OtherKey="DH_KhachHangId" Type="DonHang" />
+      <Association Name="KhachHang_DanhGiaSach" Member="DanhGiaSaches" ThisKey="KH_ID" OtherKey="DGS_KhachHangID" Type="DanhGiaSach" />
+      <Association Name="KhachHang_GioHang" Member="GioHangs" ThisKey="KH_ID" OtherKey="GH_KhachHangID" Type="GioHang" />
+    </Type>
+  </Table>
+  <Table Name="Orders.DanhGiaSach" Member="DanhGiaSaches">
+    <Type Name="DanhGiaSach">
+      <Column Name="DGS_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DGS_KhachHangID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DGS_SachID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DSG_NoiDung" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="KhachHang_DanhGiaSach" Member="KhachHang" ThisKey="DGS_KhachHangID" OtherKey="KH_ID" Type="KhachHang" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="Orders.GioHang" Member="GioHangs">
+    <Type Name="GioHang">
+      <Column Name="GH_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GH_KhachHangID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GH_SachID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GH_SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GH_ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="KhachHang_GioHang" Member="KhachHang" ThisKey="GH_KhachHangID" OtherKey="KH_ID" Type="KhachHang" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="Management.PhieuXuat" Member="PhieuXuats">
+    <Type Name="PhieuXuat">
+      <Column Name="PX_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PX_NgayXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PX_DonHangID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="PhieuXuat_ChiTietPhieuXuat" Member="ChiTietPhieuXuats" ThisKey="PX_ID" OtherKey="CTPX_PhieuXuatID" Type="ChiTietPhieuXuat" />
+      <Association Name="DonHang_PhieuXuat" Member="DonHang" ThisKey="PX_ID" OtherKey="DH_ID" Type="DonHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Management.ChiTietPhieuXuat" Member="ChiTietPhieuXuats">
+    <Type Name="ChiTietPhieuXuat">
+      <Column Name="CTPX_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CTPX_PhieuXuatID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPX_SachID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPX_SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTPX_ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="PhieuXuat_ChiTietPhieuXuat" Member="PhieuXuat" ThisKey="CTPX_PhieuXuatID" OtherKey="PX_ID" Type="PhieuXuat" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

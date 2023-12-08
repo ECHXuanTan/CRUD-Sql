@@ -1,0 +1,46 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CRUD_SQL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Nhom_SoloConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost\KHACHHANG;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginKhachHang;Password=tanda&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost\KHACHHANG;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginKhachHang;Password=tanda</Value>
+    </Setting>
+    <Setting Name="Nhom_SoloConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost\KHACHHANG;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginKhachHang&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost\KHACHHANG;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginKhachHang</Value>
+    </Setting>
+    <Setting Name="Nhom_SoloConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost\NHAXUATBAN;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginXuatBan&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost\NHAXUATBAN;Initial Catalog=Nhom_Solo;Persist Security Info=True;User ID=loginXuatBan</Value>
+    </Setting>
+    <Setting Name="Nhom_SoloConnectionString3" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-IAK7P2M\KHACHHANG;Initial Catalog=Nhom_Solo;User ID=sa;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-IAK7P2M\KHACHHANG;Initial Catalog=Nhom_Solo;User ID=sa;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+    <Setting Name="Nhom_SoloConnectionString4" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-IAK7P2M\NHAXUATBAN;Initial Catalog=Nhom_Solo;User ID=sa;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-IAK7P2M\NHAXUATBAN;Initial Catalog=Nhom_Solo;User ID=sa;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

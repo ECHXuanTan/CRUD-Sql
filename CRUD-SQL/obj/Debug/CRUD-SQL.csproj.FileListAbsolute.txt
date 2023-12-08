@@ -1,0 +1,75 @@
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe.config
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.pdb
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.Properties.Resources.resources
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CopyComplete
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.exe
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.pdb
+C:\Users\Admin\source\repos\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.CRUD.resources
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe.config
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.pdb
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.dll
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.dll
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.xml
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.xml
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.AssemblyReference.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.CRUD.resources
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.Properties.Resources.resources
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.GenerateResource.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CoreCompileInputs.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CopyComplete
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.exe
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.pdb
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe.config
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.pdb
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.dll
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.dll
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.xml
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.xml
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.AssemblyReference.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.CRUD.resources
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.Properties.Resources.resources
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.GenerateResource.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CoreCompileInputs.cache
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CopyComplete
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.exe
+D:\HCMUE\Nam_4\CSDLNC\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.pdb
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe.config
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.pdb
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.CRUD.resources
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.Properties.Resources.resources
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CopyComplete
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.exe
+C:\Users\Admin\Desktop\CRUD-SQL - Copy\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.pdb
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe.config
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.exe
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\CRUD-SQL.pdb
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.dll
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.dll
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.xml
+D:\CRUD-SQL\CRUD-SQL\bin\Debug\EntityFramework.SqlServer.xml
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.AssemblyReference.cache
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.CRUD.resources
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD_SQL.Properties.Resources.resources
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.GenerateResource.cache
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CoreCompileInputs.cache
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.csproj.CopyComplete
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.exe
+D:\CRUD-SQL\CRUD-SQL\obj\Debug\CRUD-SQL.pdb
